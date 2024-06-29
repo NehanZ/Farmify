@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Rice",
+    "introduction": "Rice is the staple food crop of Sri Lanka, cultivated extensively throughout the country.",
+    "photo": "../photo/crop1.jpg",
+    "climate_soil_requirements": {
+      "temperature": "20-35°C",
+      "rainfall": "1000-2000mm annually",
+      "soil_type": "Clay or clay loam soils"
+    },
+    "planting": {
+      "method": "Direct seeding or transplanting",
+      "season": "Maha (October-March) and Yala (April-September)"
+    },
+    "cultivation_practices": {
+      "irrigation": "Flood irrigation or alternate wetting and drying",
+      "fertilization": "NPK application based on soil testing"
+    },
+    "pest_disease_management": {
+      "pests": ["Brown planthopper", "Stem borer"],
+      "diseases": ["Blast", "Bacterial leaf blight"],
+      "control_methods": ["Integrated Pest Management", "Resistant varieties"]
+    },
+    "harvesting": {
+      "method": "Manual or mechanical harvesting",
+      "time": "90-120 days after planting, depending on variety"
+    },
+    "yield_economics": {
+      "average_yield": "4-5 tons per hectare",
+      "market_price": "Varies based on variety and quality"
+    },
+    "processing_value_addition": {
+      "products": ["Rice flour", "Rice noodles", "Rice bran oil"]
+    },
+    "sustainability_practices": [
+      "Water-saving techniques",
+      "Organic farming methods",
+      "Crop rotation"
+    ],
+    "research_development": {
+      "focus_areas": ["Drought-resistant varieties", "Pest management"]
+    },
+    "case_studies": [
+      {
+        "title": "Success of System of Rice Intensification in Ampara District",
+        "summary": "Farmers achieved 30% higher yields with reduced water usage."
+      }
+    ],
+    "resources_support": {
+      "government_agencies": ["Department of Agriculture", "Rice Research Institute"],
+      "farmer_organizations": ["All Ceylon Peasants' Federation"]
+    },
+    "faqs": [
+      {
+        "question": "What are the best rice varieties for drought-prone areas?",
+        "answer": "Drought-tolerant varieties like BG 300 and BG 350 are recommended."
+      }
+    ],
+    "multimedia_resources": {
+      "planting_guide_video": "https://example.com/rice_planting_guide.mp4",
+      "pest_identification_app": "https://example.com/rice_pest_app",
+      "yield_calculator": "https://example.com/rice_yield_calculator"
+    }
+  }
+]

@@ -1,0 +1,27 @@
+
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+i:hover,p:hover{
+    cursor: pointer;
+    color: green;
+}
+
+p,i {
+    transition: 0.1s ease;
+    margin: 0 5px 0 0;
+    padding-top: 6px;
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+ p.active {
+    text-decoration: underline;
+    
+}
+
