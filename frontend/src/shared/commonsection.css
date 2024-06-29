@@ -1,0 +1,16 @@
+.common_section {
+    background-image: url('../assets/photo/crops-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.common_section h1 {
+    font-size: 3rem;
+    color: white;
+}
