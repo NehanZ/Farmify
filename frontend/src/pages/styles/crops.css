@@ -7,7 +7,7 @@
     gap: 5px;
 }
 
-i:hover,p:hover{
+i:hover,.crop_top p:hover{
     cursor: pointer;
     color: green;
 }
