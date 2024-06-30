@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-import React from 'react'
-=======
 import React, { useState } from 'react';
-import './styles/SignIn.css'
->>>>>>> Stashed changes
+import './styles/SignIn.css';
 
 const SignIn = () => {
   const [form, setForm] = useState({
@@ -22,30 +18,26 @@ const SignIn = () => {
   };
 
   return (
-<<<<<<< Updated upstream
-    <div>SignIn</div>
-  )
-}
-=======
-    <div className='outside'>
-    <div className='inside'>
-      <h2>Sign In</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email or Phone Number</label>
-          <input type="text" name="emailOrPhone" value={form.emailOrPhone} onChange={handleChange} required />
+    <div className="signInContainer">
+      <div className='outside'>
+        <div className='inside'>
+          <h2>Sign In</h2>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label>Email or Phone Number</label>
+              <input type="text" name="emailOrPhone" value={form.emailOrPhone} onChange={handleChange} required />
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" name="password" value={form.password} onChange={handleChange} required />
+            </div>
+            <button type="submit">Sign In</button>
+          </form>
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
         </div>
-        <div>
-          <label>Password</label>
-          <input type="password" name="password" value={form.password} onChange={handleChange} required />
-        </div>
-        <button type="submit">Sign In</button>
-      </form>
-      <p>Don't have an account? <a href="/signup">Sign Up</a></p>
-    </div>
+      </div>
     </div>
   );
 };
->>>>>>> Stashed changes
 
 export default SignIn;

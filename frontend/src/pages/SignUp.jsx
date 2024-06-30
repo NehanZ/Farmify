@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-import React from 'react'
-=======
 import React, { useState } from 'react';
 import './styles/SignUp.css'
->>>>>>> Stashed changes
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -26,13 +22,8 @@ const SignUp = () => {
   };
 
   return (
-<<<<<<< Updated upstream
-    <div>SignUp</div>
-  )
-}
-=======
     <div className='outside'>
-      <div className='inside'>
+    <div className='inside'>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -66,6 +57,5 @@ const SignUp = () => {
     </div>
   );
 };
->>>>>>> Stashed changes
 
 export default SignUp;
