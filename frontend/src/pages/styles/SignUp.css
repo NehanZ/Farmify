@@ -4,35 +4,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  
 }
 
-body {
+.outside {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   padding: 0 10px;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  position: relative;
+  background-image: url('../../assets/photo/bgsign1.jpg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed ;
 }
 
-.wrapper {
+.outside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  z-index: 1;
+}
+
+.inside {
+  margin: 30px;
   width: 400px;
-  border-radius: 40px;
-  padding: 20px;
-  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: left;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 2;
 }
 
 form {
@@ -40,56 +51,76 @@ form {
   flex-direction: column;
 }
 
-h2 {
+.outside h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
   font-style: italic;
 }
 
-input[type=text],input[type=email],input[type=tel],input[type=password] {
-    width: 100%;
-    padding: 10px 15px;
-    margin: 10px 0;
-    border-radius: 30px;
-    border: 1px solid #ffffff;
-    background: rgba(255, 255, 255, 0.15);
-    color: #efefef;
-    font: weight 900px;;
+form div {
+  width: 100%;
+  margin: 10px 0;
 }
 
-input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=password]:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    outline: #efefef;
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #fff;
 }
 
-button {
+input {
+  width: 100%;
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  color: #efefef;
+  font-weight: 400;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+.outside button {
   background: white;
   color: #000;
   font-weight: bold;
-  width: 60%;
+  width: 50%;
   border: none;
-  margin-top: 10px;
+  margin: 30px !important;
   padding: 10px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 15px;
   border: 2px solid transparent;
   transition: 0.1s ease;
+  align-self: center;
+  border-radius: 30px !important;
+
 }
 
-button:hover {
+.outside button:hover {
   color: #fff;
   border-color: #ffffff;
   background: rgba(255, 255, 255, 0.15);
 }
 
-.account{
+.outside p {
   text-align: center;
   margin-top: 20px;
   color: #fff;
 }
 
-.account a{
-  font-weight: bold;
+.outside a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+.outside p:hover {
+  color: white;
 }

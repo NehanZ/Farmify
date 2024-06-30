@@ -1,47 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './styles/SignIn.css';
-import './SignUp.jsx'
-import './Password.jsx'
-import {Link} from 'react-router-dom'
 
 const SignIn = () => {
+  const [form, setForm] = useState({
+    emailOrPhone: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle sign-in logic here
+    console.log(form);
+  };
+
   return (
-    <div>
-      <body>
-        <div class="wrapper">
-          <form action="#">
-
-              <h2>Sign In</h2>
-
-              <div class="input-field">
-                  <input type="text" placeholder='Phone number,username or email' required></input>
-              </div>
-
-              <div class="input-field">
-                  <input type="password" placeholder='Password' required></input>
-              </div>
-
-              <div class="forget">
-                <label for="remember">
-                  <input type="checkbox" id="remember"></input>
-                  <p>Remember me</p>
-                </label>
-                <Link to='/Password'>Forgot password?</Link>
-              </div>
-
-              <div class="center">
-                <button type="submit">LogIn</button>
-              </div>
-              
-              <div class="register">
-                <p>Don't have an account? <Link to="/SignUp">Register</Link></p>
-              </div>
-
+    <div className="signInContainer">
+      <div className='outside'>
+        <div className='inside'>
+          <h2>Sign In</h2>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label>Email or Phone Number</label>
+              <input type="text" name="emailOrPhone" value={form.emailOrPhone} onChange={handleChange} required />
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" name="password" value={form.password} onChange={handleChange} required />
+            </div>
+            <button type="submit">Sign In</button>
           </form>
-        </div>    
-      </body>
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;
