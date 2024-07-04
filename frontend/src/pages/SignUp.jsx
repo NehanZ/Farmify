@@ -1,61 +1,60 @@
-import React, { useState } from 'react';
-import './styles/SignUp.css'
+import React from 'react'
+import './styles/SignUp.css';
+import {Link} from 'react-router-dom'
 
-const SignUp = () => {
-  const [form, setForm] = useState({
-    fullName: '',
-    email: '',
-    address: '',
-    phoneNumber: '',
-    password: '',
-    confirmPassword: '',
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle sign-up logic here
-    console.log(form);
-  };
-
+function SignUp() {
   return (
-    <div className='outside'>
-    <div className='inside'>
-      <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Full Name</label>
-          <input type="text" name="fullName" value={form.fullName} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type="email" name="email" value={form.email} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Address</label>
-          <input type="text" name="address" value={form.address} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Phone Number</label>
-          <input type="text" name="phoneNumber" value={form.phoneNumber} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" name="password" value={form.password} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Confirm Password</label>
-          <input type="password" name="confirmPassword" value={form.confirmPassword} onChange={handleChange} required />
-        </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <p>Already have an account? <a href="/signin">Sign In</a></p>
-    </div>
-    </div>
-  );
-};
+    <div>
+        <body>
+            <div className='signupcontainer'>
+                <img
+                src="https://images.pexels.com/photos/2786784/pexels-photo-2786784.jpeg?auto=compress&cs=tiny&w=srgb1260&h=750&dpr=1"
+                className="image"
+                alt="Background"/>
 
-export default SignUp;
+                <div class="text-block">
+                    <p>Join our community for exclusive tips, updates, and resources to grow your farm success!</p>
+                    <button>Explore</button>
+                </div>
+
+                <div className="wrappersignup">
+                    <form action="#">
+                        <h2>Farmify</h2>
+
+                        <div className="input-field">
+                            <input type="text" placeholder='Full Name' required></input>
+                        </div>
+
+                        <div className="input-field">
+                            <input type="text" placeholder='E-mail' required></input>
+                        </div>
+
+                        <div className="input-field">
+                            <input type="tel" placeholder='Phone Number' required></input>
+                        </div>
+
+                        <div className="input-field">
+                            <input type="password" placeholder='Password' required></input>
+                        </div>
+
+                        <div className="input-field">
+                            <input type="password" placeholder='Confirm Password' required></input>
+                        </div>
+
+                        <div className="center">
+                            <button type="submit">Create Account</button>
+                        </div>
+
+                        <div className="account">
+                            <p>You have an account? <Link to="/SignIn">Log in</Link></p>
+                        </div>
+                        
+                    </form>
+                </div>    
+            </div>
+        </body>
+    </div>
+  )
+}
+
+export default SignUp
