@@ -1,0 +1,42 @@
+.volunteer-card {
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .volunteer-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-links {
+    margin-bottom: 1px;
+  }
+
+  .photo {
+    height: 30px;
+    width: 30px; 
+    padding: 2px;
+}
+
+  .volunteer-links a {
+    margin: 0 4px;
+    text-decoration: none;
+    color: #0073b1; /* LinkedIn color */
+  }
+  
+  .volunteer-links a:nth-child(2) {
+    color: #1da1f2; /* Twitter color */
+  }
+  
+  .volunteer-links a:nth-child(3) {
+    color: #25d366; /* WhatsApp color */
+  }

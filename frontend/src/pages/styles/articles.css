@@ -1,0 +1,22 @@
+.article-page{
+    display: grid;
+    align-items: center;
+    
+    }
+
+.article-card{
+    margin: 20px;
+}
+
+.gradient-background {
+        background: linear-gradient(to bottom, #4AB906, #ffffff);
+        padding: 20px;
+        border-radius: 0px;
+        margin-bottom: 20px;
+}
+
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
