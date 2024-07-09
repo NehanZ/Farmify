@@ -1,4 +1,15 @@
 import React from 'react'
+import './home css/home.css'
+import paddy from './cropsimg/paddy.jpg'
+import tea from './cropsimg/tea.jpg'
+import rubber from './cropsimg/rubber.jpg'
+import coconut from './cropsimg/coconut.jpg'
+import corn from './cropsimg/corn.jpg'
+import coffee from './cropsimg/coffee.jpg'
+import cinnamon from './cropsimg/ci.jpg'
+import more from './cropsimg/more.jpg'
+import bgImage from './Head video/headvid.mp4'
+
 
 const Home = () => {
   return (
@@ -87,7 +98,7 @@ const Home = () => {
 
 
     </div>
-    
+
     </div>
   )
 }
