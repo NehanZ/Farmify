@@ -1,16 +1,16 @@
 import React from 'react';
 import VolunteerCard from './VolunteerCard';
 import './styles/VolunteeringPage.css';
-import profile1 from './Images/profile1.jpeg'
-import profile2 from './Images/profile2.jpeg'
-import profile3 from './Images/profile3.jpeg'
-import profile4 from './Images/profile4.jpeg'
-import profile5 from './Images/profile5.jpeg'
-import profile6 from './Images/profile6.jpeg'
-import profile7 from './Images/profile7.jpeg'
-import profile8 from './Images/profile8.jpeg'
-import profile9 from './Images/profile9.jpeg'
-import profile10 from './Images/profile10.jpeg'
+import profile1 from '../assets/Images/profile1.jpeg'
+import profile2 from '../assets/Images/profile2.jpeg'
+import profile3 from '../assets/Images/profile3.jpeg'
+import profile4 from '../assets/Images/profile4.jpeg'
+import profile5 from '../assets/Images/profile5.jpeg'
+import profile6 from '../assets/Images/profile6.jpeg'
+import profile7 from '../assets/Images/profile7.jpeg'
+import profile8 from '../assets/Images/profile8.jpeg'
+import profile9 from '../assets/Images/profile9.jpeg'
+import profile10 from '../assets/Images/profile10.jpeg'
 
 const volunteers = [
   {
