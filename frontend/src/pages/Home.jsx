@@ -13,6 +13,8 @@ import bgImage from './Head video/headvid.mp4'
 
 const Home = () => {
   return (
+    <div>Hello World</div>
+
     <div>
       <div className="video">
         <div className="text-wrapper">
@@ -100,6 +102,7 @@ const Home = () => {
     </div>
 
     </div>
+
   )
 }
 
