@@ -1,21 +1,20 @@
 import React from 'react'
-import './home css/home.css'
-import paddy from './cropsimg/paddy.jpg'
-import tea from './cropsimg/tea.jpg'
-import rubber from './cropsimg/rubber.jpg'
-import coconut from './cropsimg/coconut.jpg'
-import corn from './cropsimg/corn.jpg'
-import coffee from './cropsimg/coffee.jpg'
-import cinnamon from './cropsimg/ci.jpg'
-import more from './cropsimg/more.jpg'
-import bgImage from './Head video/headvid.mp4'
+import './styles/home.css'
+import paddy from '../assets/cropsimg/paddy.jpg'
+import tea from '../assets/cropsimg/tea.jpg'
+import rubber from '../assets/cropsimg/rubber.jpg'
+import coconut from '../assets/cropsimg/coconut.jpg'
+import corn from '../assets/cropsimg/corn.jpg'
+import coffee from '../assets/cropsimg/coffee.jpg'
+import cinnamon from '../assets/cropsimg/ci.jpg'
+import more from '../assets/cropsimg/more.jpg'
+import bgImage from '../assets/Head video/headvid.mp4'
 
 
 const Home = () => {
   return (
-    <div>Hello World</div>
-
-    <div>
+    <>
+        <div>
       <div className="video">
         <div className="text-wrapper">
           <h4>Weclome to</h4>
@@ -102,6 +101,7 @@ const Home = () => {
     </div>
 
     </div>
+    </>
 
   )
 }

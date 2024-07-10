@@ -16,7 +16,7 @@ import Password from '../pages/Password'
 const Routers = () => {
   return (
     <Routes>
-        <Route path="/" element={<Navigate to="/volunteer" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/volunteer" element={<VolunteeringPage />} />
         <Route path="/community" element={<CommunityPage />} />
