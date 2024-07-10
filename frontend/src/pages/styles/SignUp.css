@@ -5,7 +5,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
+body {
   height: 100%;
   background-color: hwb(0 100% 0%);
 }
@@ -14,12 +14,18 @@ body{
   display: flex;
   height: 100vh;
   width: 100vw;
-  position: fixed;
+}
+
+.left-column, .right-column {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  width: 55vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -34,15 +40,15 @@ body{
   height: 100px;
 }
 
-.signupcontainer .text-block p{
+.signupcontainer .text-block p {
   font-size: 30px;
-  font-family: 'Didot ';
+  font-family: 'Didot';
 }
 
-.signupcontainer .text-block button{
+.signupcontainer .text-block button {
   background: rgba(0,0,0, 0.4);
   color: #ffffff;
-  font-family: 'Luminari' ;
+  font-family: 'Luminari';
   width: 170px;
   height: 55px;
   border-width: 3px;
@@ -60,40 +66,67 @@ body{
   background: #ffffff;
 }
 
-.wrappersignup {
-  width: 400px;
-  height: 525px;
-  margin-top: 3%;
-  margin-left: 8%;
+.wrapper {
+  width: 100%;
+  max-width: 400px;
   padding: 40px;
-  border-radius: 40px;
+  border-radius: 10px;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
 }
 
-.wrappersignup form {
+.wrapper form {
   display: flex;
   flex-direction: column;
 }
 
-.wrappersignup h2 {
+.wrapper h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #000000;
-  font-family: 'Trattatello, fantasy';
+
 }
 
-.wrappersignup input[type=text],input[type=tel],input[type=password] {
-    width: 100%;
-    padding: 10px 15px;
-    margin: 10px 0;
-    border-radius: 30px;
-    border: 1px solid #000000;
-    color: #000000;
+.wrapper .input-field {
+  position: relative;
+  width: 320px;
+  margin: 10px 0;
 }
 
-.wrappersignup button {
+.wrapper input[type=text], input[type=tel], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px solid green;
+  color: #000000;
+  outline: none;
+  margin-top: 0px;
+}
+
+.wrapper span {
+  position: absolute;
+  left: 0;
+  padding: 10px 20px;
+  pointer-events: none;
+  font-size: 1.2rem;
+  transition: 0.1s ease;
+  color: #000;
+}
+
+.wrapper input:valid ~ span,
+.wrapper input:focus ~ span {
+  color: green;
+  transform: translateX(15px) translateY(-20px);
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.wrapper button {
   background: #4eff7a;
   color: #000;
   font-weight: bold;
@@ -108,24 +141,58 @@ body{
   transition: 0.1s ease;
 }
 
-.wrappersignup button:hover {
+.wrapper button:hover {
   color: #fff;
   border-color: #ffffff;
   background: #01b819;
 }
 
-.wrappersignup .account{
+.wrapper .account {
   text-align: center;
   margin-top: 30px;
   color: #000000;
 }
 
-.wrappersignup .account a{
+.wrapper .account a {
   text-decoration: none;
   font-weight: bold;
   color: #000000;
 }
 
-.wrappersignup a:hover {
+.wrapper a:hover {
   color: blue;
 }
+
+@media (max-width: 767px) {
+  .signupcontainer {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .image {
+    height: 50vh;
+  }
+
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper h4 {
+    font-size: 1rem;
+  }
+
+  .wrapper button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+

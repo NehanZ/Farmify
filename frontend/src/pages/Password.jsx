@@ -1,46 +1,37 @@
-import React from 'react'
-import './styles/Password.css'
-import './SignUp.jsx'
-import {Link} from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles/Password.css';
+import pwbg from '../assets/photo/pwbg.jpg';
 
 function Password() {
   return (
-    <div>
-        <body>
-            <div className='passwordcontainer'>
-                <img
-                src="https://images.pexels.com/photos/2786784/pexels-photo-2786784.jpeg?auto=compress&cs=tiny&w=srgb1260&h=750&dpr=1"
-                className="image"
-                alt="Background"/>
+    <div className="password-container">
+      <div className="left-column">
+        <img src={pwbg} className="image" alt="Background" />
+      </div>
+      <div className="right-column">
+        <div className="wrapper">
+          <form action="#">
+            <h2>Forgotten password</h2>
+            <h4>Enter your email to receive instructions.</h4>
 
-                <div class="text-block">
-                    <p>Join our community for exclusive tips, updates, and resources to grow your farm success!</p>
-                    <button>Explore</button>
-                </div>
+            <div className="input-field" id='input-field-pw'>
+              <input type="email" required />
+              <span>Enter Your E-mail</span>
+            </div>
 
-                <div class="wrapperpassword">
-                    <form action="#">
-                        <h2>Forgotten password</h2>
-                        <h4>Enter your email to receive instructions.</h4>
+            <div className="center">
+              <button type="submit">Submit</button>
+            </div>
 
-                        <div class="input-field">
-                            <input type="email" placeholder='Enter your email' required></input>
-                        </div>
-
-                        <div class="center">
-                            <button type="submit">Submit</button>
-                        </div>
-                
-                        <div class="register">
-                            <Link to='/SignUp'>Create new account</Link>
-                        </div>
-                    </form>
-                </div>
-            </div>    
-    </body>
+            <div className="register">
+              <Link to="/SignUp">Create new account</Link>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Password
+export default Password;
