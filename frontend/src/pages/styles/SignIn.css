@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: hwb(0 100% 0%);
+}
+
+.signin-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-column {
+  width: 50%;
+}
+
+.right-column {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper h2 {
+  display: flex-end;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.wrapper .input-field {
+  margin-bottom: 15px;
+  position: relative;
+  width: 320px;
+  margin: 20px 0;
+}
+
+.wrapper input[type=text], .wrapper input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid green;
+  color: #000000;
+  outline: none;
+  margin-top: 0px;
+}
+
+.wrapper span {
+  position: absolute;
+  left: 0;
+  padding: 10px 20px;
+  pointer-events: none;
+  font-size: 1.2rem;
+  transition: 0.1s ease;
+  color: #000;
+}
+
+.wrapper input:valid ~ span,
+.wrapper input:focus ~ span {
+  color: green;
+  transform: translateX(15px) translateY(-20px);
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 5px;
+  font-weight: 500;
+}
+
+
+
+.wrapper .forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #000000;
+}
+
+.wrapper .forget label {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .forget label p {
+  margin-left: 8px;
+}
+
+.wrapper a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wrapper a:hover {
+  color: green;
+}
+
+.wrapper button {
+  background: transparent;
+  color: #000;
+  width: 50%;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 2px solid green;
+  transition: 0.1s ease;
+  margin: 0 auto;
+}
+
+.wrapper button:hover {
+  color: #fff;
+  border-color: green;
+  background: green;
+}
+
+.wrapper .register {
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .signin-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .image {
+    height: 50vh;
+  }
+
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper h4 {
+    font-size: 1rem;
+  }
+
+  .wrapper button {
+    width: 100%;
+    padding: 15px;
+  }
+}
