@@ -103,16 +103,7 @@ const volunteers = [
     twitter: '#',
     whatsapp: '#'
   },
-  {
-    image: profile10,
-    name: 'Mr. Thurunu Fernando',
-    title: 'senior Resaecher of Field Crops Research and Development Institute ',
-    phone: '+94 32 256 7896',
-    email: 'thurunufernando@agmail.com',
-    linkedin: '#',
-    twitter: '#',
-    whatsapp: '#'
-  },
+
   // Add more volunteers here...
 ];
 
