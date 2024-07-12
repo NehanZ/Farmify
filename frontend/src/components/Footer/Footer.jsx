@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='main-footer' >
       <div className='topic'>
             <div className='t-raw'>
-              <h4>Follow Us</h4>
+              <h6>Follow Us</h6>
               <FontAwesomeIcon icon="fa-brands fa-square-facebook" />
               <a href='https://web.facebook.com/?_rdc=1&_rdr'></a>
             </div>
@@ -16,28 +16,24 @@ const Footer = () => {
           <div className='row'>
             {/*coloumn*/}
             <div className='col'>
-            <h4>About us</h4>
+            <h6>About us</h6>
               <ul className='list-unstyled'>
-                <li>wertyui</li>
-                <li>ertyuio</li>
-                <li>wertyuik</li>
+                
               </ul>
                  
              </div>
                 
             {/*coloumn*/}
             <div className='col'>
-            <h4>Our Resourses</h4>
+            <h6>Our Resourses</h6>
               <ul className='list-unstyled'>
-                <li>wertyui</li>
-                <li>wertyu</li>
-                <li>dfghjkl</li>
+                
               </ul>
                  
              </div>
             {/*coloumn*/}
             <div className='col'>
-            <h4>Help</h4>
+            <h6>Help</h6>
               <ul className='list-unstyled'>
                 <li></li>
                 <li></li>
@@ -47,7 +43,7 @@ const Footer = () => {
              </div>
              {/*coloumn*/}
              <div className='col'>
-            <h4>Terms of use</h4>
+            <h6>Terms of use</h6>
               <ul className='list-unstyled'>
                 <li></li>
                 <li></li>
