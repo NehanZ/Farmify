@@ -2,13 +2,24 @@ import React from 'react'
 import './styles/home.css'
 import paddy from '../assets/cropsimg/paddy.jpg'
 import tea from '../assets/cropsimg/tea.jpg'
-import rubber from '../assets/cropsimg/rubber.jpg'
-import coconut from '../assets/cropsimg/coconut.jpg'
-import corn from '../assets/cropsimg/corn.jpg'
-import coffee from '../assets/cropsimg/coffee.jpg'
-import cinnamon from '../assets/cropsimg/ci.jpg'
 import more from '../assets/cropsimg/more.jpg'
 import bgImage from '../assets/Head video/headvid.mp4'
+
+import pro1 from '../assets/Images/profile1.jpeg'
+import pro2 from '../assets/Images/profile8.jpeg'
+import pro3 from '../assets/Images/profile4.jpeg'
+
+import feedImage1 from "../assets/Images/Feed1.jpeg";
+import feedImage2 from "../assets/Images/Feed2.jpeg";
+import feedImage3 from "../assets/Images/Feed3.jpeg";
+import feedImage4 from "../assets/Images/Feed4.jpeg";
+import feedImage5 from "../assets/Images/Feed5.jpeg";
+import feedImage6 from "../assets/Images/Feed6.jpeg";
+import feedImage7 from "../assets/Images/Feed7.jpeg";
+import feedImage8 from "../assets/Images/Feed8.jpeg";
+
+
+
 
 
 const Home = () => {
@@ -52,40 +63,6 @@ const Home = () => {
         <a href="#tea.jsx">Visit</a>
       </div>
 
-      <div className="card">
-        <img src={rubber} alt="rubber" />
-          <h3>Rubber</h3>
-        <p>The rubber tree, scientifically known as Hevea brasiliensis, is a large tropical tree native to South America</p>
-        <a href="#rubber.jsx">Visit</a>
-      </div>
-
-      <div className="card">
-        <img src={coconut} alt="coconut" />
-          <h3>Coconut</h3>
-        <p>The coconut (Cocos nucifera) is a large palm tree that grows up to 30 meters tall and produces the coconut fruit.  </p>
-        <a href="#coconut.jsx">Visit</a>
-      </div>
-
-      <div className="card">
-        <img src={corn} alt="corn" />
-        <h3>Corn</h3>
-        <p>Corn, also known as maize, is a tall annual cereal grass that produces large ears of kernels. </p>
-        <a href="#corn.jsx">Visit</a>
-      </div>
-
-      <div className="card">
-        <img src={coffee} alt="coffee" />
-         <h3>Coffee</h3>
-        <p>Coffee is a popular beverage made from the roasted and ground seeds of the coffee plant (Coffea) </p>
-        <a href="#coffee.jsx">Visit</a>
-      </div>
-
-      <div className="card">
-        <img src={cinnamon} alt="cinnamon" />
-          <h3>Cinnamon</h3>
-        <p>The Cinnamon is a spice obtained from the inner bark of trees from the genus Cinnamomum. </p>
-        <a href="#cinnamon.jsx">Visit</a>
-      </div>
 
       <div className="card">
         <img src={more} alt="more" />
@@ -93,13 +70,54 @@ const Home = () => {
         <p>You can get some experience about other crops from here.click visit.</p>
         <a href="#more.jsx">Visit</a>
       </div>
+      </div>
 
+      <div className="volanteer">
+
+      <div className="volanteer-card">
+        <img src={pro1} alt="profile1" />
+         <h3>Mr. H.N. Bopitiya</h3>
+          <p>Director of Field Crop Research and Development Institute</p>
+          <a href="#more.jsx">View Profile</a>
+          
+      </div>
+
+      <div className="volanteer-card">
+        <img src={pro2} alt="profile2" />
+         <h3>Ms. Renuka Herath</h3>
+          <p>Lead Resaecher of Field Crops Research and Development Institute</p>
+          <a href="#more.jsx">View Profile</a>
+          
+      </div>
+
+      <div className="volanteer-card">
+        <img src={pro3} alt="profile3" />
+         <h3>Mr. Suneth Warnasooriya</h3>
+          <p>A distinguished farmer of 8 years in the field of paddy</p>
+          <a href="#more.jsx">View Profile</a>
+          
+      </div>
+
+      </div>
+
+      <section className="feed">
+          <div className="forum-header">
+            <h2>Feed</h2>
+            <button className="see-more2">More</button>
+          </div>
+          <div className="feed-grid">
+            <img onClick={feedImage1} src={feedImage1} alt="Feed 1" />
+            <img src={feedImage2} alt="Feed 2" />
+            <img src={feedImage3} alt="Feed 3" />
+            <img src={feedImage4} alt="Feed 4" />
+            <img src={feedImage5} alt="Feed 5" />
+            <img src={feedImage6} alt="Feed 6" />
+            <img src={feedImage7} alt="Feed 7" />
+            <img src={feedImage8} alt="Feed 8" />
+            
+          </div>
+        </section>
       
-
-
-
-    </div>
-
     </div>
     </>
 
