@@ -22,11 +22,12 @@ const nav__links = [
     path: '/volunteer',
     display: 'Volunteer'
   },
-  ];
+];
 
 const Header = () => {
   const headerRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const stickyHeaderFunc = () => {
     if (window.scrollY > 80) {
@@ -34,7 +35,7 @@ const Header = () => {
     } else {
       setIsSticky(false);
     }
-  }
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', stickyHeaderFunc);
@@ -46,6 +47,16 @@ const Header = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
 
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // Handle the search query submission
+    console.log('Search Query:', searchQuery);
+  };
+
   return (
     <header className={`sticky__header ${isSticky ? 'is-sticky' : ''}`} ref={headerRef}>
       <Container>
@@ -54,6 +65,17 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
+
+            <form onSubmit={handleSearchSubmit} className="search-form">
+                <input 
+                  type="text" 
+                  placeholder="Search..." 
+                  value={searchQuery} 
+                  onChange={handleSearchChange}
+                  className="search-input"
+                />
+                
+              </form>
 
             <div className="navigation">
               <ul className="menu d-flex align-items-center gap-5">
@@ -68,6 +90,7 @@ const Header = () => {
             </div>
 
             <div className="headerdiv">
+              
               <Button
                 color="warning"
                 className={`headerbtn ${isActive('/login') ? 'active' : ''}`}>
@@ -87,6 +110,6 @@ const Header = () => {
       </Container>
     </header>
   );
-}
+};
 
 export default Header;

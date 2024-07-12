@@ -3,6 +3,7 @@ import './styles/cropdetalis.css'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import cropData from '../assets/data/crops.js';
+import '../global.css'
 
 const CropDetails = () => {
   const { id } = useParams();

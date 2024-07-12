@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/SignUp.css';
 import { Link } from 'react-router-dom';
 import Signupbg from '../assets/photo/signupbg.jpg';
+import '../global.css'
 
 function SignUp() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import VolunteerCard from './VolunteerCard';
 import './styles/VolunteeringPage.css';
+import '../global.css'
 import profile1 from '../assets/Images/profile1.jpeg'
 import profile2 from '../assets/Images/profile2.jpeg'
 import profile3 from '../assets/Images/profile3.jpeg'

@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/CommunityPage.css";
+import '../global.css'
 import articlei from "../assets/Images/article-image.jpg";
 import feedImage1 from "../assets/Images/Feed1.jpeg";
 import feedImage2 from "../assets/Images/Feed2.jpeg";

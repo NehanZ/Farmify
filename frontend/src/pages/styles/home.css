@@ -94,6 +94,7 @@ body{
     position: relative;
     flex-wrap: wrap;
     gap: 6%;
+    margin-top: 0;
 }
 
 .cards .card{
@@ -102,8 +103,7 @@ body{
     width: 20%;
     border-radius: .4rem;
     flex-direction: column;
-    
-    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
 }
 
 
@@ -124,7 +124,6 @@ body{
     display: flex;
     pointer-events: none;
     margin: 4%;
-    text-shadow: 5px 4px 4px #000000;
     
 }
 
@@ -153,13 +152,14 @@ body{
     text-decoration: none;
     font-weight: bolder;
     transition-duration: .3s;
-    border: 1px solid #fff;
+    border: 2px solid rgb(255, 255, 255);
     padding: .4rem 2rem .4rem 2rem;
     margin:73% 32% 12% 30%;
+    
 }
 
 .cards a:hover{
-    background-color:rgba(9, 116, 15,.9);
+    background-color:rgba(9, 116, 15,1);
     color: rgb(255, 255, 255);
     border-color:  rgb(9, 116, 15);
     
@@ -173,15 +173,16 @@ body{
     position: relative;
     flex-wrap: wrap;
     gap: 6%;
+    margin-top: 100px;
 }
 
-.volanteer .volanteer-card{
+.volanteer-card{
     
     background-color: #ffffff;
     width: 20%;
-    border-radius: .4rem;
+    border-radius: 10px;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
     
 }
 
@@ -204,10 +205,8 @@ body{
     font-weight: bold;
     display: flex;
     pointer-events: none;
-    margin: .6%;
-    text-shadow: 5px 4px 4px #6f6e6e;
-    padding: 0% 0% 0% 0%;
-    
+    margin: .6%;    
+    text-align: center;
 }
 
 .volanteer .volanteer-card p {
@@ -231,20 +230,17 @@ body{
     background-color:transparent;
     color: #000000;
     text-decoration: none;
-    font-weight: bolder;
     transition-duration: .3s;
-    border: 1px solid #000000;
+    border: 2px solid black;
     margin: 17% 0% 0% -15.9%;
     width: 12%;
-
-   
 }
 
 .volanteer a:hover{
-    background-color:rgba(16, 61, 240, 0.903);
+    background-color:green;
     color: rgb(255, 255, 255);
-    border-color:  rgba(16, 61, 240, 0.903);
-    
+    border-color:  green;
+    transition: 0.2s ease;
 }
 
 
@@ -285,3 +281,14 @@ body{
     max-width: calc(25% - 10px);
     border-radius: 8px;
   }
+
+  .divcrop h2 {
+    font-weight: bold; 
+    font-size: 3rem;
+    padding-left: 210px;
+} 
+.divvol h2 {
+    font-weight: bold; 
+    font-size: 3rem;
+    padding-left: 210px;
+}
