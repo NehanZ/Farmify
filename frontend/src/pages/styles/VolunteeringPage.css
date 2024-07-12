@@ -22,7 +22,9 @@
 }
 
 .volunteer-grid {
+  margin: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 80px;
+  column-gap: 240px;
+  row-gap: 50px;
 }
