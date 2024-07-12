@@ -1,6 +1,6 @@
 .main-footer {
-    color: white;
-    background-color: #0cc133;
+    color: rgb(0, 0, 0);
+    background-color: white;
     padding-top: 3em;
     position: relative;
     text-align: center;
@@ -8,13 +8,16 @@
     right: 0;
     bottom: 0;
     width: 100%;
-
+    height: 150px ;
 }
 .t-raw{
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 1vh;
+  row-gap: 10px;
 }
+
+
 
