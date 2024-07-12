@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Password.css';
 import pwbg from '../assets/photo/pwbg.jpg';
+import '../global.css'
 
 function Password() {
   return (

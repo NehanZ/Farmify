@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/SignIn.css';
 import Signinbg from '../assets/photo/signinbg.jpg';
+import '../global.css'
 
 function SignIn() {
   return (

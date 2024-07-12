@@ -1,6 +1,6 @@
 .main-footer {
     color: rgb(0, 0, 0);
-    background-color: green; /* For browsers that do not support gradients */
+    background-color: green;
     background-image: linear-gradient(white, green);
     padding-top: 3em;
     position: relative;

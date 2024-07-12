@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/home.css'
+import '../global.css'
 import paddy from '../assets/cropsimg/paddy.jpg'
 import tea from '../assets/cropsimg/tea.jpg'
 import more from '../assets/cropsimg/more.jpg'
@@ -48,19 +49,22 @@ const Home = () => {
       about agricultagricultural crops from “Farmify”. join as platinum member and sher your experianseexperience
       amoung other members.</p>
     </div>
+    <div className='divcrop'>
+    <h2>Crops</h2>
     <div className="cards">
+      
       <div className="card">
-        <img src={paddy} alt="paddy" />
-          <h3>Paddy</h3>
+        <img src={paddy} alt="Rice" />
+          <h3>Rice</h3>
         <p>A paddy field is a flooded field of arable land used for growing semiaquatic crops, most notably rice and taro.</p>
-        <a href="#paddy.jsx">Visit</a>
+        <a href="/crops/1">Visit</a>
       </div>
 
       <div className="card">
-        <img src={tea} alt="tea" />
+        <img src={tea} alt="Tea" />
           <h3>Tea</h3>
         <p> Tea is a popular beverage made from Camellia sinensis leaves, enjoyed globally for its various flavors and health benefits.</p>
-        <a href="#tea.jsx">Visit</a>
+        <a href="/crops/2">Visit</a>
       </div>
 
 
@@ -68,17 +72,19 @@ const Home = () => {
         <img src={more} alt="more" />
          <h3>More</h3>
         <p>You can get some experience about other crops from here.click visit.</p>
-        <a href="#more.jsx">Visit</a>
+        <a href="/crops">Visit</a>
+      </div>
       </div>
       </div>
 
-      <div className="volanteer">
-
+      <div className="divvol">
+      <h2>Volanteers</h2>
+      <div className="volanteer">  
       <div className="volanteer-card">
         <img src={pro1} alt="profile1" />
          <h3>Mr. H.N. Bopitiya</h3>
           <p>Director of Field Crop Research and Development Institute</p>
-          <a href="#more.jsx">View Profile</a>
+          <a href="/Volunteer">View Profile</a>
           
       </div>
 
@@ -86,7 +92,7 @@ const Home = () => {
         <img src={pro2} alt="profile2" />
          <h3>Ms. Renuka Herath</h3>
           <p>Lead Resaecher of Field Crops Research and Development Institute</p>
-          <a href="#more.jsx">View Profile</a>
+          <a href="/Volunteer">View Profile</a>
           
       </div>
 
@@ -94,10 +100,10 @@ const Home = () => {
         <img src={pro3} alt="profile3" />
          <h3>Mr. Suneth Warnasooriya</h3>
           <p>A distinguished farmer of 8 years in the field of paddy</p>
-          <a href="#more.jsx">View Profile</a>
+          <a href="/Volunteer">View Profile</a>
           
       </div>
-
+      </div>
       </div>
 
       <section className="feed">

@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/VolunteerCard.css';
+import '../global.css'
 import linkimage from '../assets/Images/linkedin-icon.svg'
 import twitimage from '../assets/Images/twitter-logo.svg'
 import whatimage from '../assets/Images/whatsapp-logo.svg'

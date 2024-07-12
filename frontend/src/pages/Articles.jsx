@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/articles.css";
 import article1 from "../assets/Images/article-image.jpg";
+import '../global.css'
 
 const articlePdf1 = "./pdfs/article1.pdf";
 const articlePdf2 = "./pdfs/article2.pdf";
