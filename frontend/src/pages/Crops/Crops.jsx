@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import CommonSection from '../shared/CommonSection';
-import './styles/crops.css';
+import CommonSection from '../../shared/CommonSection';
+import './crops.css';
 import { Container, Row, Col, Button } from 'reactstrap';
-import cropData from '../assets/data/crops.js';
-import CropCard from '../shared/CropCard';
-import '../global.css'
+import cropData from '../../assets/data/crops.js';
+import CropCard from '../../shared/CropCard';
+import '../../global.css'
 
 const Crops = () => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/VolunteerCard.css';
-import '../global.css'
-import linkimage from '../assets/Images/linkedin-icon.svg'
-import twitimage from '../assets/Images/twitter-logo.svg'
-import whatimage from '../assets/Images/whatsapp-logo.svg'
+import './VolunteerCard.css';
+import '../../global.css'
+import linkimage from '../../assets/Images/linkedin-icon.svg'
+import twitimage from '../../assets/Images/twitter-logo.svg'
+import whatimage from '../../assets/Images/whatsapp-logo.svg'
 const VolunteerCard = ({ image, name, title, phone, email, linkedin, twitter, whatsapp }) => {
   return (
     <div className="volunteer-card">
