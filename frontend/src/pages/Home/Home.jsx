@@ -1,23 +1,23 @@
 import React from 'react'
-import './styles/home.css'
-import '../global.css'
-import paddy from '../assets/cropsimg/paddy.jpg'
-import tea from '../assets/cropsimg/tea.jpg'
-import more from '../assets/cropsimg/more.jpg'
-import bgImage from '../assets/Head video/headvid.mp4'
+import './home.css'
+import '../../global.css'
+import paddy from '../../assets/cropsimg/paddy.jpg'
+import tea from '../../assets/cropsimg/tea.jpg'
+import more from '../../assets/cropsimg/more.jpg'
+import bgImage from '../../assets/Head video/headvid.mp4'
 
-import pro1 from '../assets/Images/profile1.jpeg'
-import pro2 from '../assets/Images/profile8.jpeg'
-import pro3 from '../assets/Images/profile4.jpeg'
+import pro1 from '../../assets/Images/profile1.jpeg'
+import pro2 from '../../assets/Images/profile8.jpeg'
+import pro3 from '../../assets/Images/profile4.jpeg'
 
-import feedImage1 from "../assets/Images/Feed1.jpeg";
-import feedImage2 from "../assets/Images/Feed2.jpeg";
-import feedImage3 from "../assets/Images/Feed3.jpeg";
-import feedImage4 from "../assets/Images/Feed4.jpeg";
-import feedImage5 from "../assets/Images/Feed5.jpeg";
-import feedImage6 from "../assets/Images/Feed6.jpeg";
-import feedImage7 from "../assets/Images/Feed7.jpeg";
-import feedImage8 from "../assets/Images/Feed8.jpeg";
+import feedImage1 from "../../assets/Images/Feed1.jpeg";
+import feedImage2 from "../../assets/Images/Feed2.jpeg";
+import feedImage3 from "../../assets/Images/Feed3.jpeg";
+import feedImage4 from "../../assets/Images/Feed4.jpeg";
+import feedImage5 from "../../assets/Images/Feed5.jpeg";
+import feedImage6 from "../../assets/Images/Feed6.jpeg";
+import feedImage7 from "../../assets/Images/Feed7.jpeg";
+import feedImage8 from "../../assets/Images/Feed8.jpeg";
 
 
 

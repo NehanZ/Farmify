@@ -127,7 +127,7 @@ body {
 }
 
 .wrapper button {
-  background: #4eff7a;
+  background: transparent;
   color: #000;
   font-weight: bold;
   width: 60%;
@@ -135,16 +135,16 @@ body {
   margin-top: 30px;
   padding: 10px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 15px;
-  border: 2px solid transparent;
+  border: 2px solid green;
   transition: 0.1s ease;
 }
 
 .wrapper button:hover {
   color: #fff;
   border-color: #ffffff;
-  background: #01b819;
+  background: green;
 }
 
 .wrapper .account {
@@ -160,7 +160,7 @@ body {
 }
 
 .wrapper a:hover {
-  color: blue;
+  color: green;
 }
 
 @media (max-width: 767px) {
@@ -196,3 +196,13 @@ body {
   }
 }
 
+.input-field {
+  position: relative;
+}
+
+.show-password {
+  position: absolute;
+  bottom: 20px;
+  margin-left: -30px;
+
+}

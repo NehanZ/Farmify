@@ -292,3 +292,150 @@ body{
     font-size: 3rem;
     padding-left: 210px;
 }
+
+
+
+@media (max-width: 768px) {
+
+    /* Body adjustments */
+    body {
+        height: auto; /* Adjust height for smaller screens */
+        display: flex; /* Flexbox for centering content */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    /* Video section adjustments */
+    .video .text-wrapper {
+        margin-right: 5%; /* Adjust margin */
+        margin-top: 80px; /* Reduce top margin */
+        margin-bottom: 100px;
+        padding: 2% %; /* Adjust padding */
+    }
+
+    .video .text-wrapper h1 {
+        font-size: 3rem; /* Smaller font size */
+        margin: -10px 0 15px -5px; /* Adjust margin */
+    }
+
+    .video .text-wrapper p {
+        font-size: 0.5rem; /* Adjust font size */
+        margin: 0 0 2% 0; /* Adjust margins */
+        padding: 2% 0; /* Adjust padding */
+    }
+
+    .video .text-wrapper h5 {
+        margin: 0 0 0 0; /* Adjust margin */
+        font-size: 0.7rem; /* Adjust font size */
+    }
+
+    /* Header adjustments */
+    .head {
+        margin: 5 0 5% 0; /* Adjust margins */
+    }
+
+    .head p {
+        font-size: 16px; /* Adjust font size */
+        margin: 2px 10px; /* Adjust margins */
+    }
+
+    /* Cards adjustments */
+    .cards {
+        margin: 5% 0; /* Adjust margins */
+        gap: 4%; /* Adjust gap */
+    }
+
+    .cards .card {
+        width: 100%; /* Full width for cards */
+        margin-bottom: 20px; /* Margin between cards */
+    }
+
+    .cards .card img {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    .cards .card h3 {
+        font-size: 18px; /* Adjust font size */
+        margin: 2%; /* Adjust margin */
+    }
+
+    .cards .card p {
+        font-size: 12px; /* Adjust font size */
+        margin: 5% 0; /* Adjust margins */
+    }
+
+    .cards .card a {
+        font-size: 16px; /* Adjust font size */
+        padding: 0.4rem 1rem; /* Adjust padding */
+        margin: 60% 25% 10% 25%; /* Adjust margins */
+    }
+
+    /* Volunteer section adjustments */
+    .volanteer {
+        margin: 5% 0; /* Adjust margins */
+        gap: 4%; /* Adjust gap */
+    }
+
+    .volanteer-card {
+        width: 100%; /* Full width for cards */
+        margin-bottom: 20px; /* Margin between cards */
+    }
+
+    .volanteer .volanteer-card img {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    .volanteer .volanteer-card h3 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .volanteer .volanteer-card p {
+        font-size: 12px; /* Adjust font size */
+        width: 90%; /* Adjust width */
+    }
+
+    .volanteer .volanteer-card a {
+        font-size: 16px; /* Adjust font size */
+        padding: 0.4rem 1rem; /* Adjust padding */
+        margin: 15% 0 0; /* Adjust margins */
+    }
+
+    /* Feed adjustments */
+    .feed {
+        margin: 0 5%; /* Adjust margins */
+    }
+
+    .feed h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .feed-grid {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .feed-grid img {
+        max-width: 100%; /* Full width images */
+        margin-bottom: 10px; /* Margin between images */
+    }
+
+    .divcrop h2, .divvol h2 {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        font-size: 2rem; /* Adjust font size */
+    }
+}
+
+/* For screens larger than 768px but smaller than 1200px (Larger Tablets and Small Desktops) */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    /* Adjustments for medium screens can go here */
+    .cards .card {
+        width: 30%; /* Adjust card width */
+    }
+
+    .volanteer-card {
+        width: 30%; /* Adjust card width */
+    }
+
+    .feed-grid img {
+        max-width: calc(33.33% - 10px); /* Adjust for medium screens */
+    }
+}

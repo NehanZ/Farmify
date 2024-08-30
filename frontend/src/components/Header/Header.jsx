@@ -1,9 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Button } from 'reactstrap';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.jpg';
 import { List } from 'react-bootstrap-icons';
 import './Header.css';
+import { getFirestore, doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { app } from '../../config/firebase';
 
 const nav__links = [
   {
@@ -28,6 +31,9 @@ const Header = () => {
   const headerRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [userName, setUserName] = useState('User');
+  const [debugInfo, setDebugInfo] = useState('');
+  const location = useLocation();
 
   const stickyHeaderFunc = () => {
     if (window.scrollY > 80) {
@@ -44,7 +50,50 @@ const Header = () => {
     };
   }, []);
 
-  const location = useLocation();
+  useEffect(() => {
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        try {
+          console.log('Current user:', user.uid, user.email);
+          setDebugInfo(`UID: ${user.uid}, Email: ${user.email}`);
+
+          const userQuery = collection(db, 'tempuser');
+          const querySnapshot = await getDocs(userQuery);
+          
+          let userDoc = null;
+  
+          querySnapshot.forEach((doc) => {
+            if (doc.data().email === user.email) {
+              userDoc = doc;
+            }
+          });
+  
+          if (userDoc) {
+            setUserName(userDoc.data().user || 'User');
+            setDebugInfo(prev => `${prev}, Doc found: ${JSON.stringify(userDoc.data())}`);
+          } else {
+            console.log('No document found with the provided email!');
+            setDebugInfo(prev => `${prev}, No doc with Email`);
+            setUserName('User');
+          }
+        } catch (error) {
+          console.error('Error fetching user data:', error);
+          setUserName('User');
+          setDebugInfo(prev => `${prev}, Error: ${error.message}`);
+        }
+      } else {
+        setUserName('User');
+        setDebugInfo('User not signed in');
+      }
+    });
+  
+    return () => unsubscribe();
+  }, []);
+  
+
   const isActive = (path) => location.pathname === path;
 
   const handleSearchChange = (e) => {
@@ -53,7 +102,6 @@ const Header = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Handle the search query submission
     console.log('Search Query:', searchQuery);
   };
 
@@ -67,15 +115,14 @@ const Header = () => {
             </div>
 
             <form onSubmit={handleSearchSubmit} className="search-form">
-                <input 
-                  type="text" 
-                  placeholder="Search..." 
-                  value={searchQuery} 
-                  onChange={handleSearchChange}
-                  className="search-input"
-                />
-                
-              </form>
+              <input 
+                type="text" 
+                placeholder="Search..." 
+                value={searchQuery} 
+                onChange={handleSearchChange}
+                className="search-input"
+              />
+            </form>
 
             <div className="navigation">
               <ul className="menu d-flex align-items-center gap-5">
@@ -90,15 +137,15 @@ const Header = () => {
             </div>
 
             <div className="headerdiv">
-              
+            <NavLink className='user' to='/account'><div className="user">Hi {userName}</div></NavLink>
               <Button
                 color="warning"
-                className={`headerbtn ${isActive('/login') ? 'active' : ''}`}>
+                className={`headerbtn ${isActive('/signin') ? 'active' : ''}`}>
                 <NavLink to='/signin'>Sign In</NavLink>
               </Button>
               <Button
                 color="warning"
-                className={`headerbtn ${isActive('/register') ? 'active' : ''}`}>
+                className={`headerbtn ${isActive('/signup') ? 'active' : ''}`}>
                 <NavLink to='/signup'>Sign Up</NavLink>
               </Button>
               <span className="mobile__menu">

@@ -1,17 +1,17 @@
 import React from "react";
-import "./styles/CommunityPage.css";
-import '../global.css'
-import articlei from "../assets/Images/article-image.jpg";
-import feedImage1 from "../assets/Images/Feed1.jpeg";
-import feedImage2 from "../assets/Images/Feed2.jpeg";
-import feedImage3 from "../assets/Images/Feed3.jpeg";
-import feedImage4 from "../assets/Images/Feed4.jpeg";
-import feedImage5 from "../assets/Images/Feed5.jpeg";
-import feedImage6 from "../assets/Images/Feed6.jpeg";
-import feedImage7 from "../assets/Images/Feed7.jpeg";
-import feedImage8 from "../assets/Images/Feed8.jpeg";
-import feedImage9 from "../assets/Images/feed9.jpeg";
-import feedImage10 from "../assets/Images/feed10.jpeg";
+import "./CommunityPage.css";
+import '../../global.css'
+import articlei from "../../assets/Images/article-image.jpg";
+import feedImage1 from "../../assets/Images/Feed1.jpeg";
+import feedImage2 from "../../assets/Images/Feed2.jpeg";
+import feedImage3 from "../../assets/Images/Feed3.jpeg";
+import feedImage4 from "../../assets/Images/Feed4.jpeg";
+import feedImage5 from "../../assets/Images/Feed5.jpeg";
+import feedImage6 from "../../assets/Images/Feed6.jpeg";
+import feedImage7 from "../../assets/Images/Feed7.jpeg";
+import feedImage8 from "../../assets/Images/Feed8.jpeg";
+import feedImage9 from "../../assets/Images/feed9.jpeg";
+import feedImage10 from "../../assets/Images/feed10.jpeg";
 
 // Array of PDF file paths for the articles
 const articlePdf1 = "./pdfs/article1.pdf";
