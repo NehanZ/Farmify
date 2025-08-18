@@ -10,11 +10,7 @@
 3. [Installation](#installation)
 4. [Firebase Setup](#firebase-setup)
 5. [Development](#development)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
-8. [Project Structure](#project-structure)
-9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ## Features ✨
 - **User Authentication** (Signup/Login with Firebase)
